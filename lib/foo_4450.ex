@@ -1,0 +1,5 @@
+defmodule Foo4450 do
+  @words File.read!("priv/words.txt") |> String.split("\n") |> Enum.take(4450)
+
+  def foo(word), do: word in @words
+end
